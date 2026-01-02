@@ -1,7 +1,7 @@
 contacts = {}
 
 while True:
-    print("\n--- CONTACT BOOK ---")
+    print("\n NITHIN'S CONTACT BOOK ")
     print("1. Add Contact")
     print("2. View Contacts")
     print("3. Search Contact")
@@ -24,15 +24,15 @@ while True:
         print("Contact added successfully.")
 
     elif choice == "2":
-        if ocntacts == {}:
+        if contacts == {}:
             print("No contacts found.")
         else:
-            print("\n--- ALL CONTACTS ---")
+           
             for name in contacts:
                 print("Name:", name)
                 print("Phone:", contacts[name]["phone"])
                 print("Email:", contacts[name]["email"])
-                print("------------------")
+                print("--------------------")
 
     elif choice == "3":
         search = input("Enter name to search: ")
